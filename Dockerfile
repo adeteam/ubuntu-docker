@@ -10,4 +10,4 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubunt
 RUN apt-get update -qq
 RUN apt-get install -y --allow-unauthenticated docker-ce
 RUN apt-get install -y ansible python python-pip
-RUN install jmespath netaddr botocore boto boto3 google-auth pyVim pyVmomi requests
+RUN pip install jmespath netaddr botocore boto boto3 google-auth pyVim pyVmomi requests
