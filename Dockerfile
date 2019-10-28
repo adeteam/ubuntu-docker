@@ -12,5 +12,5 @@ RUN add-apt-repository "deb http://packages.cloud.google.com/apt cloud-sdk-xenia
 RUN apt-get update -qq
 RUN apt-get install -y --allow-unauthenticated docker-ce
 RUN apt-get install -y ansible python python-pip
-RUN apt-get install -y google-cloud-sdk
+RUN apt-get install -y google-cloud-sdk jq
 RUN pip install jmespath netaddr botocore boto boto3 google-auth pyVim pyVmomi requests
