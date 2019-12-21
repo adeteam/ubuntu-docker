@@ -14,3 +14,7 @@ RUN apt-get install -y --allow-unauthenticated docker-ce
 RUN apt-get install -y ansible python python-pip
 RUN apt-get install -y google-cloud-sdk jq
 RUN pip install jmespath netaddr botocore boto boto3 google-auth pyVim pyVmomi requests
+
+# install latest git
+RUN add-apt-repository ppa:git-core/ppa
+RUN apt-get update -qq && apt-get install -y git
