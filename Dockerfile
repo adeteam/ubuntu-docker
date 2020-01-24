@@ -22,8 +22,8 @@ RUN apt-get update -qq && apt-get install -y git
 # remove and clean up apt
 RUN add-apt-repository -r "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 RUN add-apt-repository -r "deb http://packages.cloud.google.com/apt cloud-sdk-xenial main"
-RUN apt-get update -qq
-RUN apt autoremove --purge
+RUN apt-get update -qq || true
+RUN apt autoremove --purge || true
 RUN rm -rf /var/lib/apt/lists/*
-RUN apt clean
+RUN apt clean || true
 RUN rm -rf /tmp/*
