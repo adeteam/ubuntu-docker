@@ -9,7 +9,7 @@ apt-get install -y -qq python3 python3-apt
 
 # install aptitude
 apt-get install -y libssl-dev apt-transport-https
- 
+
 # upgrade pip3
 curl -sL https://bootstrap.pypa.io/3.5/get-pip.py -o /usr/bin/get-pip
 chmod a+x /usr/bin/get-pip
