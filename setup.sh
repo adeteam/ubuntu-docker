@@ -22,5 +22,6 @@ EOF
 /usr/bin/python3 /usr/bin/get-pip pip==19.2.3
 hash pip3
 
-pip3 install ansible==2.10.3
+pip3 install setuptools cryptography==2.8 wheel==0.29.0
 pip3 install jmespath netaddr botocore boto boto3 google-auth pyVim pyVmomi requests
+pip3 install ansible==2.10.3
