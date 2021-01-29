@@ -12,7 +12,7 @@ RUN apt-get update -qq
 RUN apt-get install -y --allow-unauthenticated docker-ce
 RUN apt-get install -y google-cloud-sdk jq
 RUN apt-get install -y python3 python3-pip python3-apt libssl-dev
-RUN pip3 install ansible==2.9.4
+RUN pip3 install ansible==2.10.3
 RUN pip3 install jmespath netaddr botocore boto boto3 google-auth pyVim pyVmomi requests
 
 # install latest git
