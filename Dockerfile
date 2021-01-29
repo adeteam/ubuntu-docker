@@ -9,6 +9,7 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubunt
 RUN add-apt-repository "deb http://packages.cloud.google.com/apt cloud-sdk-xenial main"
 
 RUN apt-get update -qq
+RUN apt-get install -y apt-utils
 RUN apt-get install -y --allow-unauthenticated docker-ce
 RUN apt-get install -y google-cloud-sdk jq
 
